@@ -38,6 +38,7 @@ button:hover {
 }
 
 #edit {
+  position: fixed;
   left: 50%;
   bottom: 5%;
   transform: translate(-50%, -5%);
@@ -139,4 +140,31 @@ button.with-text svg{
 .back-btn {
   justify-content: center;
   align-items: center;
+}
+
+#dim {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  width: 50px;
+}
+
+.dimOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+  display: none; 
+}
+
+.dimOverlay.visible {
+  display: block; 
+}
+
+.timerDisplay.dimmed .button,
+.timerDisplay.dimmed .progressBarContainer {
+  display: none; 
 }
