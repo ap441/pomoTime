@@ -8,6 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-#This is a task for GDSC technical doman
+# This is a task for GDSC technical doman
 
 The project is deployed and can be viewed here ---> https://pomo-time-rouge.vercel.app/
