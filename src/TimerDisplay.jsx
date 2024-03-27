@@ -64,6 +64,7 @@ export const TimerDisplay = () => {
 
   const handleReset = () => {
     setIsPaused(true);
+    isPausedR.current = true;
     setSecondsLeft(TimeMenuInfo.workTime * 60);
     secondsLeftR.current = TimeMenuInfo.workTime * 60;
   }
