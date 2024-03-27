@@ -149,6 +149,13 @@ button.with-text svg{
   width: 50px;
 }
 
+html:-moz-full-screen,
+html:-webkit-full-screen,
+html:-ms-fullscreen,
+html:fullscreen {
+  overflow: hidden; 
+}
+
 .dimOverlay {
   position: fixed;
   top: 0;
