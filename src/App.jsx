@@ -1,34 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { TimerDisplay } from './TimerDisplay';
+import TimerMenu from './TimerMenu';
+import TimeMenuContext from './TimeMenuContext.jsx'
 
 function App() {
-  const [timer, setTimer] = useState(600);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer(prevTimer => {
-        if (prevTimer > 0) {
-          return prevTimer - 1;
-        } else {
-          clearInterval(interval);
-          alert("askjfdgasjfsadf");
-          return 0;
-        }
-      });
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  function updateTimerDisplay(time) {
-    const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
-    const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
-    return `${minutes}:${formattedSeconds}`;
-  }
+  const [showTimeMenu, setShowTimeMenu] = useState(false);
+  const [workTime, setWorkTime] = useState(40);
+  const [breakTime, setBreakTime] = useState(20);
 
   return (
-    <div className='timer'>
-      <span id='timer'>{updateTimerDisplay(timer)}</span>
+    <div>
+      <TimeMenuContext.Provider value={{
+        showTimeMenu,
+        setShowTimeMenu,
+        workTime,
+        breakTime,
+        setWorkTime,
+        setBreakTime,
+      }}>
+        {showTimeMenu ? <TimerMenu /> : <TimerDisplay /> }
+      </TimeMenuContext.Provider>
     </div>
   );
 }
