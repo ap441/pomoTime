@@ -218,7 +218,11 @@ html:fullscreen {
     width: 70px;
   }
 
+  #wt {
+    width: 62vw;
+  }
+  
   #bt {
-    max-width: 100%;
+    width: 62vw;
   }
 }
