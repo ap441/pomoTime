@@ -199,15 +199,15 @@ html:fullscreen {
   }
 
   #play {
-    width: 70px;
+    width: 20%;
   }
 
   #pause {
-    width: 70px;
+    width: 20%;
   }
 
   #reset {
-    width: 70px;
+    width: 18%;
   }
 
   #edit {
@@ -221,7 +221,7 @@ html:fullscreen {
   #wt {
     width: 62vw;
   }
-  
+
   #bt {
     width: 62vw;
   }

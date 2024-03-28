@@ -100,6 +100,7 @@ export const TimerDisplay = () => {
     <main>
       <div className={`timerDisplay ${dimmed ? 'dimmed' : ''}`}>
         <CircularProgressbar
+          className='progress-bar'
           value={percentage}
           text={!dimmed ? `${minutes}:${seconds}` : ''}
           styles={buildStyles({
