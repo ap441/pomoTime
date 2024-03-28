@@ -80,7 +80,8 @@ h2{
 
 .slider {
   height: 30px;
-  width: 400px;
+  width: 80vw;
+  max-width: 400px;
   border: 2px solid orange;
   border-radius: 20px;
 }
@@ -102,7 +103,8 @@ h2{
 
 .slider-break {
   height: 30px;
-  width: 400px;
+  width: 80vw;
+  max-width: 400px;
   border: 2px solid green;
   border-radius: 20px;
 }
@@ -116,7 +118,8 @@ h2{
 }
 
 button.with-text{
-  width: 150px;
+  width: 80vw;
+  max-width: 150px;
   border: 2px solid orange;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -146,7 +149,7 @@ button.with-text svg{
   position: absolute;
   top: 3%;
   right: 1%;
-  width: 50px;
+  width: 70px;
 }
 
 html:-moz-full-screen,
@@ -174,4 +177,44 @@ html:fullscreen {
 .timerDisplay.dimmed .button,
 .timerDisplay.dimmed .progressBarContainer {
   display: none; 
+}
+
+@media only screen and (max-width: 768px) {
+  .timerDisplay {
+    flex-direction: column;
+    height: auto;
+    width: 90vw; 
+    max-width: 400px; 
+  }
+
+  .slider,
+  .slider-break {
+    width: 80vw; 
+    max-width: 300px; 
+  }
+
+  button.with-text {
+    width: 80vw; 
+    max-width: 150px; 
+  }
+
+  #play {
+    width: 70px;
+  }
+
+  #pause {
+    width: 70px;
+  }
+
+  #reset {
+    width: 70px;
+  }
+
+  #edit {
+    bottom: 15%;
+  }
+
+  #dim {
+    width: 70px;
+  }
 }

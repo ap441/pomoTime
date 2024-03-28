@@ -9,6 +9,7 @@ import EditButton from './assets/icons/EditButton';
 import DimButton from './assets/icons/DimButton';
 import TimeMenuContext from './TimeMenuContext';
 
+
 export const TimerDisplay = () => {
   const TimeMenuInfo = useContext(TimeMenuContext);
 
