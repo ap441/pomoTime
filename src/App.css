@@ -225,4 +225,8 @@ html:fullscreen {
   #bt {
     width: 62vw;
   }
+
+  #header1 {
+    width: 52%;
+  }
 }
