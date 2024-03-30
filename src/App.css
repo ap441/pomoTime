@@ -13,6 +13,7 @@ button {
   border: 0;
   display: inline-block;
   position: absolute;
+  background-color: transparent;
 }
 
 button:hover {
@@ -105,12 +106,12 @@ h2{
   height: 30px;
   width: 80vw;
   max-width: 400px;
-  border: 2px solid green;
+  border: 2px solid #00A67D;
   border-radius: 20px;
 }
 
 .thumb-break {
-  background-color: green;
+  background-color: #00A67D;
   cursor: pointer;
   width: 40px;
   height: 30px;

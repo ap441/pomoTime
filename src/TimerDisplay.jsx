@@ -104,7 +104,7 @@ export const TimerDisplay = () => {
           value={percentage}
           text={!dimmed ? `${minutes}:${seconds}` : ''}
           styles={buildStyles({
-            pathColor: mode === 'work' ? 'orange' : 'green',
+            pathColor: mode === 'work' ? 'orange' : '#00A67D',
             textColor: 'white',
           })}
         />
